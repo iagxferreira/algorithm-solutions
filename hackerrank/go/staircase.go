@@ -1,5 +1,7 @@
 package hackerrank
 
+import "fmt"
+
 func staircase(n int32) {
 	output := ""
 

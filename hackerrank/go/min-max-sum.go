@@ -1,4 +1,9 @@
-package hackerrank 
+package hackerrank
+
+import (
+	"fmt"
+	"slices"
+)
 
 func miniMaxSum(arr []int32) {
     slices.Sort(arr)

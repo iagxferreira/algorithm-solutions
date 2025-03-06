@@ -1,5 +1,10 @@
 package leetcode
 
+import (
+	"math"
+	"strings"
+)
+
 func myAtoi(s string) int {
 	s = strings.TrimSpace(s)
 	result := 0
