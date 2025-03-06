@@ -1,4 +1,4 @@
-package hackerrank
+package leetcode
 
 func rotate(matrix [][]int)  {
     n, m := len(matrix), len(matrix[0])

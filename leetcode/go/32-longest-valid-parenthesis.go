@@ -1,4 +1,4 @@
-package hackerrank
+package leetcode
 
 func max(a, b int) int {
 

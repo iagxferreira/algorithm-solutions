@@ -1,4 +1,4 @@
-package hackerrank
+package leetcode
 
 func fizzBuzz(n int) []string {
     response := make([]string, 0)

@@ -1,4 +1,4 @@
-package hackerrank
+package leetcode
 
 func isValid(s string) bool {
 	if len(s) == 0 || len(s)%2 == 1 {
