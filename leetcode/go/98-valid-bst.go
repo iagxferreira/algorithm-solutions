@@ -6,37 +6,22 @@
  *     Right *TreeNode
  * }
  */
-func validateWithMemo(node *TreeNode, min *int, max *int, memo []bool) []bool {
+func isValidBST(root *TreeNode) bool {
+	return validate(root, nil, nil)
+}
+
+func validate(node *TreeNode, min *int, max *int) bool {
 	if node == nil {
-		return memo
+		return true
 	}
 
-	isValid := true
-
 	if min != nil && node.Val <= *min {
-		isValid = false
+		return false
 	}
 
 	if max != nil && node.Val >= *max {
-		isValid = false
+		return false
 	}
 
-	memo = append(memo, isValid)
-
-	memo = validateWithMemo(node.Left, min, &node.Val, memo)
-	memo = validateWithMemo(node.Right, &node.Val, max, memo)
-
-	return memo
-}
-
-func isValidBST(root *TreeNode) bool {
-	memo := make([]bool, 0)
-	memo = validateWithMemo(root, nil, nil, memo)
-
-	for _, result := range memo {
-		if !result {
-			return false
-		}
-	}
-	return true
+	return validate(node.Left, min, &node.Val) && validate(node.Right, &node.Val, max)
 }
