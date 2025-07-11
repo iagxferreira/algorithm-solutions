@@ -7,21 +7,23 @@
  * }
  */
 func isValidBST(root *TreeNode) bool {
-	return validate(root, nil, nil)
+	memo := inOrderTraverse(root, []int{})
+
+	for i := 0; i < len(memo)-1; i++ {
+		if memo[i] >= memo[i+1] {
+			return false
+		}
+	}
+	return true
 }
 
-func validate(node *TreeNode, min *int, max *int) bool {
-	if node == nil {
-		return true
+func inOrderTraverse(root *TreeNode, inorder []int) []int {
+	if root == nil {
+		return inorder
 	}
 
-	if min != nil && node.Val <= *min {
-		return false
-	}
-
-	if max != nil && node.Val >= *max {
-		return false
-	}
-
-	return validate(node.Left, min, &node.Val) && validate(node.Right, &node.Val, max)
+	inorder = inOrderTraverse(root.Left, inorder)
+	inorder = append(inorder, root.Val)
+	inorder = inOrderTraverse(root.Right, inorder)
+	return inorder
 }
