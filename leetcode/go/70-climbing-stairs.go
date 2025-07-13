@@ -1,12 +1,9 @@
 func climbStairs(n int) int {
-	memo := make(map[int]int)
-	memo[1] = 1
-	memo[2] = 2
-
-	if value, ok := memo[n]; ok {
-		return value
+	dp := make([]int, n+1)
+	dp[0] = 1
+	dp[1] = 1
+	for i := 2; i <= n; i++ {
+		dp[i] = dp[i-1] + dp[i-2]
 	}
-
-	result := climbStairs(n-1) + climbStairs(n-2)
-	return result
+	return dp[n]
 }
