@@ -1,4 +1,9 @@
-import "unicode"
+package leetcode
+
+import (
+	"strings"
+	"unicode"
+)
 
 func isValid(word string) bool {
 	if len(word) < 3 {

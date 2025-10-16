@@ -1,3 +1,5 @@
+package leetcode
+
 type MyStack struct {
 	items []int
 	size  int

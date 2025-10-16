@@ -1,3 +1,5 @@
+package leetcode
+
 /**
  * Definition for singly-linked list.
  * type ListNode struct {
@@ -5,6 +7,11 @@
  *     Next *ListNode
  * }
  */
+type ListNode struct {
+	Val  int
+	Next *ListNode
+}
+
 func getDecimalValue(head *ListNode) int {
 	var result int
 	for head != nil {

@@ -1,3 +1,5 @@
+package leetcode
+
 func binarySearch(items []int, low, high, target int) int {
 	if low > high {
 		return -1

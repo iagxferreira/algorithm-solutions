@@ -6,6 +6,9 @@
  *     Right *TreeNode
  * }
  */
+
+package leetcode
+
 func invertTree(root *TreeNode) *TreeNode {
 	if root == nil {
 		return root

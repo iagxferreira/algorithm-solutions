@@ -1,8 +1,4 @@
-package main
-
-import (
-	"fmt"
-)
+package leetcode
 
 func maximumLength(nums []int, k int) int {
 	maxLength := 2
@@ -25,4 +21,3 @@ func maximumLength(nums []int, k int) int {
 
 	return maxLength
 }
-

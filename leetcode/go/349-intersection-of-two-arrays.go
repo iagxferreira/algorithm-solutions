@@ -1,3 +1,5 @@
+package leetcode
+
 func intersection(nums1 []int, nums2 []int) []int {
 	seen := make(map[int]bool)
 	for _, n := range nums1 {

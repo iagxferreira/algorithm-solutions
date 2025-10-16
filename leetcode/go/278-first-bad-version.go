@@ -1,3 +1,5 @@
+package leetcode
+
 /**
  * Forward declaration of isBadVersion API.
  * @param   version   your guess about first bad version

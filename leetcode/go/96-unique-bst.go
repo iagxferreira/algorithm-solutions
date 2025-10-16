@@ -1,3 +1,5 @@
+package leetcode
+
 func numTrees(n int) int {
 	memo := make([]int, n+1)
 	memo[0], memo[1] = 1, 1

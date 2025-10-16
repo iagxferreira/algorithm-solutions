@@ -1,3 +1,5 @@
+package leetcode
+
 type MyQueue struct {
 	insertStack  []int
 	consultStack []int
