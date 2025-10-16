@@ -1,3 +1,5 @@
+package leetcode
+
 func lengthOfLongestSubstring(s string) int {
 	right := len(s)
 	max := 0

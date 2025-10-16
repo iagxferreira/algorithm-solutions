@@ -1,3 +1,5 @@
+package leetcode
+
 func permute(nums []int) [][]int {
 	res := [][]int{{}}
 

@@ -1,3 +1,5 @@
+package leetcode
+
 func maxArea(height []int) int {
 	length := len(height)
 	width := length - 1

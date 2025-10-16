@@ -1,3 +1,5 @@
+package leetcode
+
 func removeElement(nums []int, val int) int {
 	aux := 0
 	size := len(nums)
