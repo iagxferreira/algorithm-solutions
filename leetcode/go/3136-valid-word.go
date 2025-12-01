@@ -5,7 +5,7 @@ import (
 	"unicode"
 )
 
-func isValid(word string) bool {
+func isValidWord(word string) bool {
 	if len(word) < 3 {
 		return false
 	}
