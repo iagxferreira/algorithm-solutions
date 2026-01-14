@@ -1,3 +1,6 @@
+from typing import Optional
+
+
 # Definition for singly-linked list.
 # class ListNode:
 #     def __init__(self, val=0, next=None):
@@ -11,7 +14,7 @@ class Solution:
             next_pair_node = current_node.next.next
             second = current_node.next
 
-            second.next  = current_node
+            second.next = current_node
             current_node.next = next_pair_node
             previous_node.next = second
 

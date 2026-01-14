@@ -1,3 +1,6 @@
+from typing import List, Optional
+
+
 # Definition for singly-linked list.
 # class ListNode:
 #     def __init__(self, val=0, next=None):
@@ -11,10 +14,11 @@ class Solution:
             placeholder = []
             for i in range(0, len(lists), 2):
                 list1 = lists[i]
-                list2 = lists[i+1] if i + 1 < len(lists) else None
+                list2 = lists[i + 1] if i + 1 < len(lists) else None
                 placeholder.append(merge_lists(list1, list2))
             lists = placeholder
         return lists[0]
+
 
 def merge_lists(list1, list2):
     node = ListNode()
