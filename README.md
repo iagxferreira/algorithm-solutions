@@ -14,10 +14,27 @@ The old multi-language solution archive now lives under [`legacy/`](./legacy), p
 ## What This Milestone Introduced
 
 - a Kotlin/JVM Gradle build
+- a `mise` project config for the local toolchain
 - a new documentation structure
 - an initial curriculum roadmap
 - a small metadata model for future problem tracking
 - test infrastructure for JUnit 5
+
+## Run It Easily
+
+From the repository root:
+
+```bash
+mise install
+mise run test
+```
+
+If you prefer `mise` task shortcuts:
+
+```bash
+mise run setup
+mise run test
+```
 
 ## Near-Term Scope
 
@@ -42,4 +59,3 @@ That is the current boundary. The next step is to add the first real Kotlin impl
 - `benchmarks/` future JMH work
 - `templates/` reusable problem and note templates
 - `legacy/` archived solutions from the previous multi-language structure
-
