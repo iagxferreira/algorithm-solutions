@@ -118,6 +118,11 @@ Relevant edge cases:
 - Invalid operations
 - Invariants
 
+Test scaffold:
+
+- Kotlin test file:
+- What should this test prove?
+
 ## 13. Complexity
 
 - Time:
@@ -141,4 +146,3 @@ Relevant edge cases:
 - Did I make an implementation mistake?
 - Did I make a complexity mistake?
 - Did I misunderstand the problem?
-
