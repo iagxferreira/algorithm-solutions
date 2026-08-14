@@ -1,0 +1,10 @@
+.gradle/
+build/
+out/
+*.class
+*.log
+*.iml
+.idea/
+.kotlin/
+legacy/**/build/
+
