@@ -54,6 +54,8 @@ That is the current boundary. The next step is to add the first real Kotlin impl
 - `docs/` learning roadmap and reference notes
 - `notes/` pattern and mistake journals
 - `problems/` organized problem library
+- `src/main/kotlin/algorithms/problems/` executable Kotlin implementations
+- `src/test/kotlin/algorithms/problems/` executable Kotlin tests
 - `src/main/kotlin/` reusable Kotlin implementation space
 - `src/test/kotlin/` tests and invariants
 - `benchmarks/` future JMH work
