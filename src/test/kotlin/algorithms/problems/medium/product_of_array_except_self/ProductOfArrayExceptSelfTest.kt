@@ -1,4 +1,4 @@
-package problems.medium.product_of_array_except_self
+package algorithms.problems.medium.product_of_array_except_self
 
 import org.junit.jupiter.api.Disabled
 import org.junit.jupiter.api.Test
@@ -9,4 +9,3 @@ class ProductOfArrayExceptSelfTest {
     fun placeholder() {
     }
 }
-

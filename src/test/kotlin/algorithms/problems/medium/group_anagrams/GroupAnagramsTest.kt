@@ -1,12 +1,11 @@
-package problems.medium.two_sum_ii
+package algorithms.problems.medium.group_anagrams
 
 import org.junit.jupiter.api.Disabled
 import org.junit.jupiter.api.Test
 
 @Disabled("Scaffold only")
-class TwoSumIiTest {
+class GroupAnagramsTest {
     @Test
     fun placeholder() {
     }
 }
-

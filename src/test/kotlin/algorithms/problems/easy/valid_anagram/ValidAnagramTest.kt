@@ -1,12 +1,11 @@
-package problems.easy.valid_palindrome
+package algorithms.problems.easy.valid_anagram
 
 import org.junit.jupiter.api.Disabled
 import org.junit.jupiter.api.Test
 
 @Disabled("Scaffold only")
-class ValidPalindromeTest {
+class ValidAnagramTest {
     @Test
     fun placeholder() {
     }
 }
-
