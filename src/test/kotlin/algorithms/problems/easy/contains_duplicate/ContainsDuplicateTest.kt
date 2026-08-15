@@ -24,4 +24,24 @@ class ContainsDuplicateTest {
     fun `returns false for a single element`() {
         assertFalse(containsDuplicate(intArrayOf(42)))
     }
+
+    @Test
+    fun `returns false for an empty array`() {
+        assertFalse(containsDuplicate(intArrayOf()))
+    }
+
+    @Test
+    fun `handles duplicate at the start`() {
+        assertTrue(containsDuplicate(intArrayOf(2, 2, 3, 4)))
+    }
+
+    @Test
+    fun `handles duplicate at the end`() {
+        assertTrue(containsDuplicate(intArrayOf(1, 2, 3, 3)))
+    }
+
+    @Test
+    fun `handles all equal values`() {
+        assertTrue(containsDuplicate(intArrayOf(7, 7, 7, 7)))
+    }
 }
